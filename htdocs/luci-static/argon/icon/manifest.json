@@ -1,5 +1,7 @@
 {
-	"name": "OpenWrt",
+	"name": "OpenWrt LuCi",
+	"short_name": "OpenWrt",
+	"display": "standalone",
 	"icons": [
 		{
 			"src": "\/android-icon-36x36.png",

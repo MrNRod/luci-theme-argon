@@ -115,7 +115,14 @@
 	<div class="login-container">
 		<div class="login-form">
 			<!-- Logo Start -->
-			<a class="brand" href="/"><img src="{{ media }}/img/argon.svg" class="icon">
+			<a class="brand" href="/">
+				<svg width="50px" height="50px" viewBox="0 0 1067 1067" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" class="icon">
+					<path id="svg_1" d="M150.417,1.667l765.833,-0c82.083,-0 148.75,66.666 148.75,148.75l0,765.833c0,82.083 -66.667,148.75 -148.75,148.75l-765.833,0c-82.084,0 -148.75,-66.667 -148.75,-148.75l-0,-765.833c-0,-82.084 66.666,-148.75 148.75,-148.75Z" style="fill:var(--icon-color, #5e72e4);"/>
+					<g id="svg_4">
+						<circle id="svg_2" cx="533.333" cy="550" r="76.25" style="fill:#fff;"/>
+						<path id="svg_3" d="M533.54,199.344c-194.583,-0 -351.667,157.5 -351.667,351.666c0,134.167 75.417,250.834 185.834,310c28.333,15.417 63.75,-0.833 71.666,-32.083l17.917,-73.333c6.25,-25.834 -4.167,-52.5 -25.417,-68.334c-41.666,-30.833 -68.333,-80.416 -68.333,-136.25c0,-93.75 76.25,-169.583 169.583,-169.583c93.75,-0 169.584,76.25 169.584,169.583c-0,55.834 -26.667,105 -68.334,136.25c-21.25,15.834 -31.666,42.5 -25.416,68.75l18.333,73.334c7.917,31.25 42.917,47.5 71.667,32.083c110.833,-59.167 185.833,-175.833 185.833,-310.417c0.833,-193.75 -157.083,-351.666 -351.25,-351.666Z" style="fill:#fff;fill-rule:nonzero;"/>
+					</g>
+				</svg>
 				<span class="brand-text">{{ hostname }}</span>
 			</a>
 			<!-- Logo End -->

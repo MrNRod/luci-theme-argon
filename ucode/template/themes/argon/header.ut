@@ -104,6 +104,7 @@
 		:root {
 			--primary: {{ primary }};
 			--dark-primary: {{ dark_primary }};
+			--icon-color: {{ bar_color }};
 			--blur-radius:{{ blur_radius }}px;
 			--blur-opacity:{{ blur_opacity }};
 			--blur-radius-dark:{{ blur_radius_dark }}px;
