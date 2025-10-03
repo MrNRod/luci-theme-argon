@@ -35,6 +35,7 @@
 	//Custom settings
 	let mode = 'normal';
 	let bar_color = '#5e72e4';
+	let icon_color = '#5e72e4';
 	let primary, dark_primary, blur_radius, blur_radius_dark, blur_opacity, blur_opacity_dark;
 	const dark_css = readfile('/www/luci-static/argon/css/dark.css');
 	if (access('/etc/config/argon')) {
@@ -46,6 +47,7 @@
 		blur_opacity_dark = cfg.get_first('argon', 'global', 'transparency_dark');
 		mode = cfg.get_first('argon', 'global', 'mode');
 		bar_color = (mode == 'dark') ? dark_primary : primary;
+		icon_color = bar_color;
 	}
 
 -%}
@@ -74,6 +76,8 @@
 	<meta name="apple-mobile-web-app-title" content="{{ hostname }} - LuCI">
 
 	<!-- Theme and Colors -->
+	<meta name="theme-color" content="{{ primary }}" media="(prefers-color-scheme: light)">
+	<meta name="theme-color" content="{{ dark_primary }}" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="{{ bar_color }}">
 	<meta name="msapplication-TileColor" content="{{ bar_color }}">
 	<meta name="msapplication-TileImage" content="{{ media }}/icon/ms-icon-144x144.png">
@@ -104,7 +108,7 @@
 		:root {
 			--primary: {{ primary }};
 			--dark-primary: {{ dark_primary }};
-			--icon-color: {{ bar_color }};
+			--icon-color: {{ icon_color }};
 			--blur-radius:{{ blur_radius }}px;
 			--blur-opacity:{{ blur_opacity }};
 			--blur-radius-dark:{{ blur_radius_dark }}px;
